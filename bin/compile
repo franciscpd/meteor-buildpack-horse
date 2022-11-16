@@ -172,7 +172,7 @@ cp "$METEOR_NODE" "$NODE"
 chmod a+x "$NODE"
 
 # Add npm and node path so that 1.4's npm-rebuild.js will function.
-PATH="$METEOR_DIR/.meteor:`dirname $METEOR_NPM`:`dirname $METEOR_YARN`:$COMPILE_DIR/bin:$PATH"
+PATH="$METEOR_DIR/.meteor:`dirname $METEOR_NPM`:$COMPILE_DIR/bin:$PATH"
 
 echo "-----> Using node: `$NODE --version`"
 echo "----->    and npm: `$METEOR_NPM --version`"
