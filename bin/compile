@@ -168,7 +168,7 @@ PATH="$METEOR_DIR/.meteor:`dirname $METEOR_NPM`:$COMPILE_DIR/bin:$PATH"
 
 $METEOR_NPM install -g yarn
 
-METEOR_YARN=`dirname "$METEOR_NODE"`/yarn"
+METEOR_YARN="`dirname "$METEOR_NODE"`/yarn"
 
 if [ -z "$METEOR_YARN" ]; then
   echo "FATAL: Can't find yarn within meteor bundle. This is a bug. Please open an issue at https://github.com/franciscpd/meteor-buildpack-horse.";
